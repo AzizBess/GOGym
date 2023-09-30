@@ -2,7 +2,7 @@
 //  ExerciceService.swift
 //  GoGym
 //
-//  Created by Hana Salhi on 2023-09-29.
+//  Created by Aziz Bessrour on 2023-09-29.
 //
 
 import Foundation
