@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA52F4292AC8CB4000CE7961 /* GOGYMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */; };
+		AA52F42D2AC8CB4200CE7961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */; };
+		AA52F4302AC8CB4200CE7961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42F2AC8CB4200CE7961 /* Preview Assets.xcassets */; };
+		AA52F4462AC8CC5500CE7961 /* ExerciceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4372AC8CC5500CE7961 /* ExerciceService.swift */; };
+		AA52F4472AC8CC5500CE7961 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4382AC8CC5500CE7961 /* APIManager.swift */; };
+		AA52F4482AC8CC5500CE7961 /* ExerciceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F43A2AC8CC5500CE7961 /* ExerciceItemView.swift */; };
+		AA52F4492AC8CC5500CE7961 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F43B2AC8CC5500CE7961 /* HomeView.swift */; };
+		AA52F44A2AC8CC5500CE7961 /* FuturesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F43C2AC8CC5500CE7961 /* FuturesBootcamp.swift */; };
+		AA52F44B2AC8CC5500CE7961 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F43E2AC8CC5500CE7961 /* HomeViewModel.swift */; };
+		AA52F44C2AC8CC5500CE7961 /* Equipement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4402AC8CC5500CE7961 /* Equipement.swift */; };
+		AA52F44D2AC8CC5500CE7961 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4412AC8CC5500CE7961 /* Target.swift */; };
+		AA52F44E2AC8CC5500CE7961 /* URLPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4422AC8CC5500CE7961 /* URLPath.swift */; };
+		AA52F44F2AC8CC5500CE7961 /* BodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4432AC8CC5500CE7961 /* BodyPart.swift */; };
+		AA52F4502AC8CC5500CE7961 /* Exercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4452AC8CC5500CE7961 /* Exercice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA52F4252AC8CB4000CE7961 /* GOGYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOGYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGYMApp.swift; sourceTree = "<group>"; };
+		AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA52F42F2AC8CB4200CE7961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA52F4372AC8CC5500CE7961 /* ExerciceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciceService.swift; sourceTree = "<group>"; };
+		AA52F4382AC8CC5500CE7961 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AA52F43A2AC8CC5500CE7961 /* ExerciceItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciceItemView.swift; sourceTree = "<group>"; };
+		AA52F43B2AC8CC5500CE7961 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA52F43C2AC8CC5500CE7961 /* FuturesBootcamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuturesBootcamp.swift; sourceTree = "<group>"; };
+		AA52F43E2AC8CC5500CE7961 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AA52F4402AC8CC5500CE7961 /* Equipement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipement.swift; sourceTree = "<group>"; };
+		AA52F4412AC8CC5500CE7961 /* Target.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		AA52F4422AC8CC5500CE7961 /* URLPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLPath.swift; sourceTree = "<group>"; };
+		AA52F4432AC8CC5500CE7961 /* BodyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyPart.swift; sourceTree = "<group>"; };
+		AA52F4452AC8CC5500CE7961 /* Exercice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA52F4222AC8CB4000CE7961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA52F41C2AC8CB4000CE7961 = {
+			isa = PBXGroup;
+			children = (
+				AA52F4272AC8CB4000CE7961 /* GOGYM */,
+				AA52F4262AC8CB4000CE7961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA52F4262AC8CB4000CE7961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4252AC8CB4000CE7961 /* GOGYM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA52F4272AC8CB4000CE7961 /* GOGYM */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4512AC8CCAA00CE7961 /* Manager */,
+				AA52F43F2AC8CC5500CE7961 /* Enum */,
+				AA52F4362AC8CC5500CE7961 /* Services */,
+				AA52F4442AC8CC5500CE7961 /* Model */,
+				AA52F4392AC8CC5500CE7961 /* View */,
+				AA52F43D2AC8CC5500CE7961 /* ViewModel */,
+				AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */,
+				AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */,
+				AA52F42E2AC8CB4200CE7961 /* Preview Content */,
+			);
+			path = GOGYM;
+			sourceTree = "<group>";
+		};
+		AA52F42E2AC8CB4200CE7961 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F42F2AC8CB4200CE7961 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA52F4362AC8CC5500CE7961 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4372AC8CC5500CE7961 /* ExerciceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA52F4392AC8CC5500CE7961 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F43A2AC8CC5500CE7961 /* ExerciceItemView.swift */,
+				AA52F43B2AC8CC5500CE7961 /* HomeView.swift */,
+				AA52F43C2AC8CC5500CE7961 /* FuturesBootcamp.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA52F43D2AC8CC5500CE7961 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F43E2AC8CC5500CE7961 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AA52F43F2AC8CC5500CE7961 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4402AC8CC5500CE7961 /* Equipement.swift */,
+				AA52F4412AC8CC5500CE7961 /* Target.swift */,
+				AA52F4422AC8CC5500CE7961 /* URLPath.swift */,
+				AA52F4432AC8CC5500CE7961 /* BodyPart.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		AA52F4442AC8CC5500CE7961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4452AC8CC5500CE7961 /* Exercice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA52F4512AC8CCAA00CE7961 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AA52F4382AC8CC5500CE7961 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA52F4242AC8CB4000CE7961 /* GOGYM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA52F4332AC8CB4200CE7961 /* Build configuration list for PBXNativeTarget "GOGYM" */;
+			buildPhases = (
+				AA52F4212AC8CB4000CE7961 /* Sources */,
+				AA52F4222AC8CB4000CE7961 /* Frameworks */,
+				AA52F4232AC8CB4000CE7961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GOGYM;
+			productName = GOGYM;
+			productReference = AA52F4252AC8CB4000CE7961 /* GOGYM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA52F41D2AC8CB4000CE7961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					AA52F4242AC8CB4000CE7961 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = AA52F4202AC8CB4000CE7961 /* Build configuration list for PBXProject "GOGYM" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA52F41C2AC8CB4000CE7961;
+			productRefGroup = AA52F4262AC8CB4000CE7961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA52F4242AC8CB4000CE7961 /* GOGYM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA52F4232AC8CB4000CE7961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA52F4302AC8CB4200CE7961 /* Preview Assets.xcassets in Resources */,
+				AA52F42D2AC8CB4200CE7961 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA52F4212AC8CB4000CE7961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA52F4472AC8CC5500CE7961 /* APIManager.swift in Sources */,
+				AA52F44A2AC8CC5500CE7961 /* FuturesBootcamp.swift in Sources */,
+				AA52F44B2AC8CC5500CE7961 /* HomeViewModel.swift in Sources */,
+				AA52F44D2AC8CC5500CE7961 /* Target.swift in Sources */,
+				AA52F4292AC8CB4000CE7961 /* GOGYMApp.swift in Sources */,
+				AA52F4502AC8CC5500CE7961 /* Exercice.swift in Sources */,
+				AA52F44E2AC8CC5500CE7961 /* URLPath.swift in Sources */,
+				AA52F4492AC8CC5500CE7961 /* HomeView.swift in Sources */,
+				AA52F44C2AC8CC5500CE7961 /* Equipement.swift in Sources */,
+				AA52F4482AC8CC5500CE7961 /* ExerciceItemView.swift in Sources */,
+				AA52F44F2AC8CC5500CE7961 /* BodyPart.swift in Sources */,
+				AA52F4462AC8CC5500CE7961 /* ExerciceService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA52F4312AC8CB4200CE7961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA52F4322AC8CB4200CE7961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA52F4342AC8CB4200CE7961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GOGYM/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P8LKB2CNU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aziz.bessrour.GOGYM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA52F4352AC8CB4200CE7961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GOGYM/Preview Content\"";
+				DEVELOPMENT_TEAM = 9P8LKB2CNU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aziz.bessrour.GOGYM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA52F4202AC8CB4000CE7961 /* Build configuration list for PBXProject "GOGYM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA52F4312AC8CB4200CE7961 /* Debug */,
+				AA52F4322AC8CB4200CE7961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA52F4332AC8CB4200CE7961 /* Build configuration list for PBXNativeTarget "GOGYM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA52F4342AC8CB4200CE7961 /* Debug */,
+				AA52F4352AC8CB4200CE7961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA52F41D2AC8CB4000CE7961 /* Project object */;
+}
