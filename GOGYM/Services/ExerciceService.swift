@@ -16,4 +16,10 @@ class ExerciceService {
             .map(\.value)
             .eraseToAnyPublisher()
     }
+    
+    func fetchExercicesByBodyPart(_ bodyPart: BodyPart) -> AnyPublisher<Exercices, Error> {
+        return APIManager.shared.callAPI(.exercicesByBodyPart(bodyPart: bodyPart.rawValue))
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
 }

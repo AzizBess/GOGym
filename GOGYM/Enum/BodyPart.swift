@@ -8,18 +8,22 @@
 import Foundation
 
 enum BodyPart: String, CaseIterable {
-    case back // done
-    case cardio // done
-    case chest // done
-    case lowerArms // done
-    case lowerLegs // done
-    case neck // done
-    case shoulders // done
-    case upperArms // done
-    case upperLegs // done
-    case waist // done
+    case back
+    case cardio
+    case chest
+    case lowerArms
+    case lowerLegs
+    case neck
+    case shoulders
+    case upperArms
+    case upperLegs
+    case waist
     
     var imageName: String {
         self.rawValue
+    }
+    
+    var logoName: String {
+        "bp-" + self.rawValue
     }
 }

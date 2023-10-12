@@ -10,28 +10,30 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(BodyPart.allCases, id: \.hashValue) { item in
-                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
-                        .frame(height: 300)
-                }
-            }
-            .scrollTargetLayout()
-        }
+//        ScrollView(.horizontal) {
+//            HStack {
+//                ForEach(BodyPart.allCases, id: \.hashValue) { item in
+//                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
+//                        .frame(height: 300)
+//                }
+//            }
+//            .scrollTargetLayout()
+//        }
+//        
+//        ScrollView(.horizontal) {
+//            HStack {
+//                ForEach(Equipement.allCases, id: \.hashValue) { item in
+//                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
+//                }
+//            }
+//            .scrollTargetLayout()
+//        }
+//        
+//        .contentMargins(16, for: .scrollContent)
+//        .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
+//        .listStyle(.plain)
         
-        ScrollView(.horizontal) {
-            HStack {
-                ForEach(Equipement.allCases, id: \.hashValue) { item in
-                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
-                }
-            }
-            .scrollTargetLayout()
-        }
-        
-        .contentMargins(16, for: .scrollContent)
-        .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
-        .listStyle(.plain)
+        CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: .chest))
     }
 }
 

@@ -42,6 +42,6 @@ struct ExerciceItemView: View {
 
 struct ExerciceItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciceItemView(exercice: Exercice(bodyPart: "", equipment: .cable, gifURL: "", id: "", name: "Test Exercice", target: "test", secondaryMuscles: [], instructions: []))
+        ExerciceItemView(exercice: Exercice(bodyPart: "", equipment: "", gifURL: "", id: "", name: "Test Exercice", target: "test", secondaryMuscles: [], instructions: []))
     }
 }

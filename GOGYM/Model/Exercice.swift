@@ -7,10 +7,10 @@ import Foundation
 
 // MARK: - Exercice
 struct Exercice: Codable {
-    let bodyPart: String
-    let equipment: Equipment
-    let gifURL: String
-    let id, name, target: String
+    var bodyPart: String
+    var equipment: String?
+    var gifURL: String
+    var id, name, target: String
     let secondaryMuscles, instructions: [String]
     
     enum CodingKeys: String, CodingKey {
@@ -20,9 +20,9 @@ struct Exercice: Codable {
     }
 }
 
-enum Equipment: String, Codable {
-    case bodyWeight = "body weight"
-    case cable = "cable"
-}
+//enum Equipment: String, Codable {
+//    case bodyWeight = "body weight"
+//    case cable = "cable"
+//}
 
 typealias Exercices = [Exercice]
