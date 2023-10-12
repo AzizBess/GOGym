@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Equipement: String {
+enum Equipement: String, CaseIterable {
       case assisted = "assisted"
       case band = "band"
       case barbell = "barbell"
@@ -36,4 +36,12 @@ enum Equipement: String {
       case upperBodyErgometer = "upper body ergometer"
       case weighted = "weighted"
       case wheelRolle = "wheel rolle"
+    
+    var imageName: String {
+        if self.rawValue.contains(" ") {
+            return self.rawValue.filter { $0 != " " }
+        } else {
+            return self.rawValue
+        }
+    }
 }

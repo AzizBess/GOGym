@@ -1,35 +1,61 @@
 //
-//  ContentView.swift
-//  GoGym
+//  HomeView.swift
+//  GOGYM
 //
-//  Created by Aziz Bessrour on 2023-09-27.
+//  Created by Aziz Bessrour on 2023-10-09.
 //
 
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var viewModel: HomeViewModel
-    var gridItemLayout = [GridItem(.fixed(100.0)), GridItem(.fixed(100.0)), GridItem(.fixed(100.0))]
+    
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: gridItemLayout) {
-                    ForEach(viewModel.exercices, id: \.id, content: { exercice in
-                        ExerciceItemView(exercice: exercice)
-                    })
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(BodyPart.allCases, id: \.hashValue) { item in
+                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
+                        .frame(height: 300)
                 }
             }
-            .listStyle(.plain)
-            .navigationTitle("Go Gym")
+            .scrollTargetLayout()
         }
-        .onAppear {
-            viewModel.fetchExerciceDataSubscriber()
+        
+        ScrollView(.horizontal) {
+            HStack {
+                ForEach(Equipement.allCases, id: \.hashValue) { item in
+                    ExtractedView(imageName: item.imageName, itemName: item.rawValue)
+                }
+            }
+            .scrollTargetLayout()
         }
+        
+        .contentMargins(16, for: .scrollContent)
+        .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
+        .listStyle(.plain)
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView(viewModel: HomeViewModel())
+#Preview {
+    HomeView()
+}
+
+struct ExtractedView: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    let imageName: String
+    let itemName: String
+    var body: some View {
+//        VStack {
+//            Image(imageName)
+//                .resizable()
+//                .frame(width: 80, height: 80)
+//            Text(itemName)
+//        }
+//        .clipShape(
+//            RoundedRectangle(cornerRadius: 10)
+//        )
+        ItemView(image: imageName, title: itemName)
+        .containerRelativeFrame(.horizontal,
+                                count: verticalSizeClass == .regular ? 2 : 4,
+                                spacing: 16.0)
     }
 }

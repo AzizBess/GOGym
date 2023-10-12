@@ -11,7 +11,7 @@ import SwiftUI
 struct GOGYMApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: HomeViewModel())
+            HomeView()
         }
     }
 }
