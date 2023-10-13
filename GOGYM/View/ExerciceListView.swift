@@ -15,7 +15,7 @@ struct ExerciceListView: View {
             ScrollView {
                 LazyVGrid(columns: gridItemLayout) {
                     ForEach(viewModel.exercices, id: \.id, content: { exercice in
-                        ExerciceItemView(exercice: exercice)
+                        ExerciceItemView(imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? "")
                     })
                 }
             }
