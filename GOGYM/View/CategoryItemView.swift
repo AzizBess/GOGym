@@ -37,7 +37,7 @@ struct CategoryItemView: View {
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(viewModel.exercices, id: \.id) { exercice in
-                        ExerciceItemmView(imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? "")
+                        ExerciceItemView(imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? "")
                             .containerRelativeFrame(.horizontal,
                                                     count: 2,
                                                     spacing: 16.0)
@@ -96,37 +96,7 @@ struct CategoryHeaderView: View {
         .padding(.horizontal, 10.0)
     }
 }
-struct ExerciceItemmView: View {
-    var imageURL: String
-    var title: String
-    var subtitle: String
-    var body: some View {
-        VStack {
-            ZStack {
-                AsyncImage(url: URL(string: imageURL)) {
-                    $0.image?
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200, alignment: .center)
-                }
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                Color.random(opacity: 0.25)
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 15.0))
 
-            .padding(.vertical, 15)
-            Text(title)
-                .font(.title3)
-                .lineLimit(1)
-                .bold()
-                .foregroundStyle(Color.black.gradient)
-            Text(subtitle)
-                .font(.footnote)
-                .foregroundStyle(Color.black.gradient)
-        }
-    }
-}
 
 
 
