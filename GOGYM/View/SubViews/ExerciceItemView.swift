@@ -18,20 +18,24 @@ struct ExerciceItemView: View {
                     $0.image?
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200, alignment: .center)
+                        .frame(width: 150, height: 150, alignment: .center)
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 15.0))
 
-            .padding(.vertical, 15)
-            Text(title)
-                .font(.title3)
-                .lineLimit(1)
-                .bold()
-                .foregroundStyle(Color.black.gradient)
-            Text(subtitle)
-                .font(.footnote)
-                .foregroundStyle(Color.black.gradient)
+            .padding(.bottom, 15)
+            VStack {
+                Text(title)
+                    .font(.subheadline)
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+                    .bold()
+                    .foregroundStyle(Color.black.gradient)
+                Text(subtitle)
+                    .font(.footnote)
+                    .foregroundStyle(Color.black.gradient)
+            }
+            .padding(.horizontal, 5)
         }
     }
 }
