@@ -10,6 +10,7 @@ import SwiftUI
 struct CategoryHeaderView: View {
     let image: String
     let title: String
+    let hasMore: Bool
     var body: some View {
         HStack(spacing: 20.0) {
             
@@ -21,7 +22,7 @@ struct CategoryHeaderView: View {
                     .padding(10)
                     .overlay(
                         Circle()
-                            .stroke(Color.random(), lineWidth: 3)
+                            .stroke(Color.random(), lineWidth: 5)
                     )
             }
             
@@ -33,10 +34,13 @@ struct CategoryHeaderView: View {
                     .font(.title2)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .leadingFirstTextBaseline)
-                HStack {
-                    Text("See all")
-                        .font(.caption)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                if hasMore {
+                    HStack {
+                        Text("See all")
+                            .font(.caption)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .padding(.trailing, 10)
+                    }
                 }
             }
         }
@@ -45,5 +49,5 @@ struct CategoryHeaderView: View {
 }
 
 #Preview {
-    CategoryHeaderView(image: "", title: "")
+    CategoryHeaderView(image: "", title: "", hasMore: true)
 }

@@ -29,8 +29,8 @@ class APIManager {
             fatalError("APIError.invalidEndpoint")
         }
         var request = URLRequest(url: url,
-            cachePolicy: .useProtocolCachePolicy,
-            timeoutInterval: timeoutInterval)
+                                 cachePolicy: .useProtocolCachePolicy,
+                                 timeoutInterval: timeoutInterval)
         request.httpMethod = httpMethod
         request.allHTTPHeaderFields = headers
         return request
@@ -39,8 +39,7 @@ class APIManager {
 
 extension APIManager {
     func callAPI<T: Decodable>(_ path: URLPath, limit: Int? = nil) -> AnyPublisher<Response<T>, Error> {
-        
-        return URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit))
+        URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit))
             .tryMap { result -> Response<T> in
                 
                 guard let httpResponse = result.response as? HTTPURLResponse, httpResponse.statusCode == 200 else {

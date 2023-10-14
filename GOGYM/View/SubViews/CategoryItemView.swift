@@ -12,7 +12,7 @@ struct CategoryItemView: View {
     @ObservedObject var viewModel: CategoryItemViewModel
     var body: some View {
         VStack(spacing: 5.0) {
-            CategoryHeaderView(image: viewModel.bodyPart.logoName, title: "\(viewModel.bodyPart.name.capitalized) Exercices")
+            CategoryHeaderView(image: viewModel.bodyPart.logoName, title: "\(viewModel.bodyPart.name.capitalized) Exercices", hasMore: viewModel.hasMore)
             
             ScrollView(.horizontal) {
                 HStack {
