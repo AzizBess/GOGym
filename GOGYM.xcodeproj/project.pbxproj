@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B026A992AD8207A00B01E2E /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B026A982AD8207900B01E2E /* CategoryItemView.swift */; };
-		8B1B65AE2AE15BB800AB0A6C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B65AD2AE15BB800AB0A6C /* Config.swift */; };
 		8B5974962ADACBF300EB2E50 /* CategoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5974952ADACBF300EB2E50 /* CategoryItemViewModel.swift */; };
 		8B5974982ADADAC000EB2E50 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5974972ADADAC000EB2E50 /* CategoryHeaderView.swift */; };
 		8B6D8B7B2AD4943500F22BAE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D8B7A2AD4943400F22BAE /* HomeView.swift */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		8B026A982AD8207900B01E2E /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
-		8B1B65AD2AE15BB800AB0A6C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		8B5974952ADACBF300EB2E50 /* CategoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewModel.swift; sourceTree = "<group>"; };
 		8B5974972ADADAC000EB2E50 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		8B6D8B7A2AD4943400F22BAE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 				AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */,
 				AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */,
 				AA52F42E2AC8CB4200CE7961 /* Preview Content */,
-				8B1B65AD2AE15BB800AB0A6C /* Config.swift */,
 			);
 			path = GOGYM;
 			sourceTree = "<group>";
@@ -256,7 +253,6 @@
 				8B026A992AD8207A00B01E2E /* CategoryItemView.swift in Sources */,
 				AA52F44C2AC8CC5500CE7961 /* Equipement.swift in Sources */,
 				AA52F4482AC8CC5500CE7961 /* ExerciceItemView.swift in Sources */,
-				8B1B65AE2AE15BB800AB0A6C /* Config.swift in Sources */,
 				AA52F44F2AC8CC5500CE7961 /* BodyPart.swift in Sources */,
 				AA52F4462AC8CC5500CE7961 /* ExerciceService.swift in Sources */,
 			);
