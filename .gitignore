@@ -109,5 +109,5 @@ iOSInjectionProject/
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode
 
 // My Files
-GOGYM/Config
+GOGYM/Credentials.swift
 .DS_Store
