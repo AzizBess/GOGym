@@ -12,11 +12,11 @@ class APIManager {
     static let shared = APIManager()
     private let headers = [
         "X-RapidAPI-Key": APIKey,
-        "X-RapidAPI-Host": APIHost
+        "X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
     ]
-    private let timeoutInterval = APItimeoutInterval
+    private let timeoutInterval = 10.0
     private let httpMethod = "GET"
-    private let baseURL = "https://\(APIHost)/exercises"
+    private let baseURL = "https://exercisedb.p.rapidapi.com/exercises"
     private let limitString = "?limit="
 
     private func buildRequest(path: URLPath, limit: Int? = nil) -> URLRequest {
