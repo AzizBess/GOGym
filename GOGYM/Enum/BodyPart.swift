@@ -28,6 +28,10 @@ enum BodyPart: String, CaseIterable {
         "bp-" + rawValue
     }
     
+    var bannerName: String {
+        "banner-" + rawValue
+    }
+    
     var name: String {
         switch self {
         case .lowerArms:

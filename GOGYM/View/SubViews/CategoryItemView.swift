@@ -12,12 +12,21 @@ struct CategoryItemView: View {
     @ObservedObject var viewModel: CategoryItemViewModel
     var body: some View {
         VStack(spacing: 5.0) {
-            CategoryHeaderView(image: viewModel.bodyPart.logoName, title: "\(viewModel.bodyPart.name.capitalized) Exercices", hasMore: viewModel.hasMore)
-            
+            CategoryHeaderView(
+                viewModel: viewModel,
+                image: viewModel.bodyPart.logoName,
+                title: "\(viewModel.bodyPart.name.capitalized) Exercices",
+                hasMore: viewModel.hasMore
+            )
+
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(viewModel.exercices, id: \.id) { exercice in
-                        ExerciceItemView(imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? "")
+                        ExerciceItemView(
+                            imageURL: exercice.gifURL,
+                            title: exercice.name,
+                            subtitle: exercice.equipment ?? ""
+                        )
                             .frame(minHeight: 250, alignment: .center)
                             .containerRelativeFrame(.horizontal,
                                                     count: 2,
@@ -26,8 +35,6 @@ struct CategoryItemView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
                             )
-                        
-                            
                     }
                 }
                 .scrollTargetLayout()

@@ -8,28 +8,26 @@
 import SwiftUI
 
 struct ExerciceListView: View {
-    @ObservedObject var viewModel: HomeViewModel
-    var gridItemLayout = [GridItem(.fixed(100.0)), GridItem(.fixed(100.0)), GridItem(.fixed(100.0))]
+    @ObservedObject var viewModel: ExerciceListViewModel
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: gridItemLayout) {
-                    ForEach(viewModel.exercices, id: \.id, content: { exercice in
-                        ExerciceItemView(imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? "")
-                    })
-                }
-            }
-            .listStyle(.plain)
-            .navigationTitle("Go Gym")
+        ScrollView(.vertical) {
+            BannerView(bodyPart: viewModel.bodyPart)
+            ForEach(viewModel.exercices, id: \.id, content: { exercice in
+                VerticalExerciceItemView(
+                    imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? ""
+                )
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.vertical, 16)
+            })
+            
         }
-        .onAppear {
-            viewModel.fetchExerciceDataSubscriber()
-        }
+//        .navigationTitle(viewModel.bodyPart.name)
+//        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciceListView(viewModel: HomeViewModel())
+        ExerciceListView(viewModel: ExerciceListViewModel(exercices: [], bodyPart: .chest))
     }
 }

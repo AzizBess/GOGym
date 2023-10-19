@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CategoryHeaderView: View {
+    @ObservedObject var viewModel: CategoryItemViewModel
     let image: String
     let title: String
     let hasMore: Bool
@@ -36,10 +37,13 @@ struct CategoryHeaderView: View {
                     .frame(maxWidth: .infinity, alignment: .leadingFirstTextBaseline)
                 if hasMore {
                     HStack {
-                        Text("See all")
-                            .font(.caption)
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .padding(.trailing, 10)
+                        NavigationLink(destination: ExerciceListView(viewModel: ExerciceListViewModel(exercices: viewModel.exercices, bodyPart: viewModel.bodyPart))) {
+                            Text("See all")
+                                .font(.caption)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                                .padding(.trailing, 10)
+                        }
+                        
                     }
                 }
             }
@@ -49,5 +53,5 @@ struct CategoryHeaderView: View {
 }
 
 #Preview {
-    CategoryHeaderView(image: "", title: "", hasMore: true)
+    CategoryHeaderView(viewModel: CategoryItemViewModel(bodyPart: .chest), image: "", title: "", hasMore: true)
 }
