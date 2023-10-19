@@ -11,15 +11,14 @@ import Combine
 class APIManager {
     static let shared = APIManager()
     private let headers = [
-        "X-RapidAPI-Key": "4ea165d90dmshbf362904ddc2abbp1987f7jsn4c756e1cc51f",
-        "X-RapidAPI-Host": "exercisedb.p.rapidapi.com"
+        "X-RapidAPI-Key": APIKey,
+        "X-RapidAPI-Host": APIHost
     ]
-    private let timeoutInterval = 10.0
+    private let timeoutInterval = APItimeoutInterval
     private let httpMethod = "GET"
-
-    private let baseURL = "https://exercisedb.p.rapidapi.com/exercises"
+    private let baseURL = "https://\(APIHost)/exercises"
     private let limitString = "?limit="
-    
+
     private func buildRequest(path: URLPath, limit: Int? = nil) -> URLRequest {
         var stringURL = baseURL + path.rawValue
         if let limit {
@@ -29,8 +28,15 @@ class APIManager {
             fatalError("APIError.invalidEndpoint")
         }
         var request = URLRequest(url: url,
-                                 cachePolicy: .useProtocolCachePolicy,
+                                 cachePolicy: .returnCacheDataDontLoad,//.useProtocolCachePolicy,
                                  timeoutInterval: timeoutInterval)
+        
+        /*: - Note: "Use this code in the feature to load cached data when internet is not available"
+        // Load from the source
+        if networkStatus == available {
+            urlRequest.cachePolicy = .reloadIgnoringLocalCacheData
+        }
+        */
         request.httpMethod = httpMethod
         request.allHTTPHeaderFields = headers
         return request
@@ -39,9 +45,8 @@ class APIManager {
 
 extension APIManager {
     func callAPI<T: Decodable>(_ path: URLPath, limit: Int? = nil) -> AnyPublisher<Response<T>, Error> {
-        URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit))
+        return URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit))
             .tryMap { result -> Response<T> in
-                
                 guard let httpResponse = result.response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                     print("status code for api response : \((result.response as? HTTPURLResponse)?.statusCode ?? 200)")
                     throw URLError(.badURL)
