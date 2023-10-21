@@ -12,16 +12,12 @@ struct BannerView: View {
     var body: some View {
         Image(bodyPart.bannerName)
             .resizable()
-            .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 350, alignment: .center)
+            .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 300, alignment: .top)
             .aspectRatio(contentMode: .fit)
+            .clipShape(RoundedRectangle(cornerRadius: 15.0))
             .overlay {
-                VStack {
-                    Text(bodyPart.name)
-                        .font(.largeTitle).fontWeight(.bold)
-                    Text("Equipement")
-                        .font(.footnote).fontWeight(.bold)
-                        
-                }
+                Text(bodyPart.name + " Exercices")
+                    .font(.title).fontWeight(.bold)
                 .foregroundStyle(Color.white.gradient)
                 .frame(maxWidth: .infinity, maxHeight: .infinity,  alignment: .bottomLeading)
                 .padding(20)
