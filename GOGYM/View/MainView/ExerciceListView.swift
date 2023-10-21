@@ -12,15 +12,18 @@ struct ExerciceListView: View {
     var body: some View {
         ScrollView(.vertical) {
             BannerView(bodyPart: viewModel.bodyPart)
-                .padding(.top, -50)
+                .padding(.bottom, 10)
             ForEach(viewModel.exercices, id: \.id, content: { exercice in
-                VerticalExerciceItemView(
-                    imageURL: exercice.gifURL, title: exercice.name, subtitle: exercice.equipment ?? ""
+                ExerciceItemView(
+                    imageURL: exercice.gifURL, 
+                    title: exercice.name,
+                    subtitle: exercice.equipment ?? ""
                 )
-                .frame(maxWidth: .infinity, alignment: .leading)
             })
-            
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 16)
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

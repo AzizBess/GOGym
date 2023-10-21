@@ -22,7 +22,7 @@ struct CategoryItemView: View {
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(viewModel.exercices, id: \.id) { exercice in
-                        ExerciceItemView(
+                        ExerciceCardView(
                             imageURL: exercice.gifURL,
                             title: exercice.name,
                             subtitle: exercice.equipment ?? ""

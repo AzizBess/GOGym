@@ -27,9 +27,11 @@ class APIManager {
         guard let url = URL(string: stringURL) else {
             fatalError("APIError.invalidEndpoint")
         }
-        var request = URLRequest(url: url,
-                                 cachePolicy: .returnCacheDataElseLoad,
-                                 timeoutInterval: timeoutInterval)
+        var request = URLRequest(
+            url: url,
+            cachePolicy: .returnCacheDataElseLoad, // .reloadIgnoringLocalCacheData
+            timeoutInterval: timeoutInterval
+        )
         
         /*: - Note: "Use this code in the feature to load cached data when internet is not available"
         // Load from the source

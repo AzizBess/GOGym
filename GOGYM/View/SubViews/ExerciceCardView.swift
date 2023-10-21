@@ -1,45 +1,47 @@
 //
-//  VerticalExerciceItemView.swift
-//  GOGYM
+//  ExerciceItem.swift
+//  GoGym
 //
-//  Created by Aziz Bessrour on 2023-10-19.
+//  Created by Aziz Bessrour on 2023-09-30.
 //
 
 import SwiftUI
 
-struct VerticalExerciceItemView: View {
+struct ExerciceCardView: View {
     var imageURL: String
     var title: String
     var subtitle: String
     var body: some View {
-        HStack {
+        VStack {
             ZStack {
                 AsyncImage(url: URL(string: imageURL)) {
                     $0.image?
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80, alignment: .center)
+                        .frame(width: 150, height: 150, alignment: .center)
                 }
             }
             .clipShape(RoundedRectangle(cornerRadius: 15.0))
 
             .padding(.bottom, 15)
-            VStack(alignment: .leading) {
+            VStack {
                 Text(title)
                     .font(.subheadline)
                     .lineLimit(2)
-//                    .multilineTextAlignment(.leading)
+                    .multilineTextAlignment(.center)
                     .bold()
                     .foregroundStyle(Color.black.gradient)
                 Text(subtitle)
                     .font(.footnote)
-                    .multilineTextAlignment(.leading)
                     .foregroundStyle(Color.black.gradient)
             }
-            .padding(.vertical, 10)
+            .padding(.horizontal, 5)
         }
     }
 }
-#Preview {
-    VerticalExerciceItemView(imageURL: "bp-chest", title: "Bench Press", subtitle: "Barbell")
+
+struct ExerciceItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        ExerciceCardView(imageURL: "", title: "", subtitle: "")
+    }
 }
