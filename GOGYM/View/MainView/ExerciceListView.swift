@@ -21,8 +21,6 @@ struct ExerciceListView: View {
             })
             
         }
-//        .navigationTitle(viewModel.bodyPart.name)
-//        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

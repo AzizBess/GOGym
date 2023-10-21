@@ -28,7 +28,7 @@ class APIManager {
             fatalError("APIError.invalidEndpoint")
         }
         var request = URLRequest(url: url,
-                                 cachePolicy: .returnCacheDataDontLoad,//.useProtocolCachePolicy,
+                                 cachePolicy: .returnCacheDataElseLoad,
                                  timeoutInterval: timeoutInterval)
         
         /*: - Note: "Use this code in the feature to load cached data when internet is not available"
