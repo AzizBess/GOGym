@@ -11,13 +11,12 @@ import Combine
 class CategoryItemViewModel: ObservableObject {
     @Published var exercices = Exercices()
     @Published var hasMore: Bool = false
-    let limit: Int
+    private let limit = 20
     let bodyPart: BodyPart
     private var bag = Set<AnyCancellable>()
 
-    init(bodyPart: BodyPart, limit: Int = 10) {
+    init(bodyPart: BodyPart) {
         self.bodyPart = bodyPart
-        self.limit = limit
     }
 
     func fetchExerciceByBodyPart() {

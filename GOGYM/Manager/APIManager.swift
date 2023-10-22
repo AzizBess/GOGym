@@ -18,18 +18,22 @@ class APIManager {
     private let httpMethod = "GET"
     private let baseURL = "https://exercisedb.p.rapidapi.com/exercises"
     private let limitString = "?limit="
+    private let offsetString = "&offset="
 
-    private func buildRequest(path: URLPath, limit: Int? = nil) -> URLRequest {
+    private func buildRequest(path: URLPath, limit: Int? = nil, offset: Int? = nil) -> URLRequest {
         var stringURL = baseURL + path.rawValue
         if let limit {
             stringURL.append("\(limitString)\(limit)")
+        }
+        if let offset {
+            stringURL.append("\(offsetString)\(offset)")
         }
         guard let url = URL(string: stringURL) else {
             fatalError("APIError.invalidEndpoint")
         }
         var request = URLRequest(
             url: url,
-            cachePolicy: .returnCacheDataElseLoad, // .reloadIgnoringLocalCacheData
+            cachePolicy: .reloadIgnoringLocalCacheData,//.returnCacheDataElseLoad,
             timeoutInterval: timeoutInterval
         )
         
@@ -46,8 +50,8 @@ class APIManager {
 }
 
 extension APIManager {
-    func callAPI<T: Decodable>(_ path: URLPath, limit: Int? = nil) -> AnyPublisher<Response<T>, Error> {
-        return URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit))
+    func callAPI<T: Decodable>(_ path: URLPath, limit: Int? = nil, offset: Int = 0) -> AnyPublisher<Response<T>, Error> {
+        return URLSession.shared.dataTaskPublisher(for: buildRequest(path: path, limit: limit, offset: offset))
             .tryMap { result -> Response<T> in
                 guard let httpResponse = result.response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                     print("status code for api response : \((result.response as? HTTPURLResponse)?.statusCode ?? 200)")

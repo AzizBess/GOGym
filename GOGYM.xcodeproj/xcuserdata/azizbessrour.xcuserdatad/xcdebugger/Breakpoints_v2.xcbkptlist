@@ -3,4 +3,166 @@
    uuid = "A4A980F2-D788-4ABD-B731-440CF184D0D7"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32D6223E-69C6-4630-BE03-0AE1518761DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/Services/ExerciceService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchExercicesByBodyPart(_:limit:offset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B30FE364-2D46-4FE3-B410-BE4335449A28"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/Manager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "buildRequest(path:limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B30FE364-2D46-4FE3-B410-BE4335449A28 - bb7a9ebb8c1e8a38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GOGYM.APIManager.buildRequest(path: GOGYM.URLPath, limit: Swift.Optional&lt;Swift.Int&gt;, offset: Swift.Optional&lt;Swift.Int&gt;) -&gt; Foundation.URLRequest"
+                  moduleName = "GOGYM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azizbessrour/Projects/GOGym/GOGYM/Manager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1696">
+               </Location>
+               <Location
+                  uuid = "B30FE364-2D46-4FE3-B410-BE4335449A28 - bb7a9ebb8c1e8a38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GOGYM.APIManager.buildRequest(path: GOGYM.URLPath, limit: Swift.Optional&lt;Swift.Int&gt;, offset: Swift.Optional&lt;Swift.Int&gt;) -&gt; Foundation.URLRequest"
+                  moduleName = "GOGYM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azizbessrour/Projects/GOGym/GOGYM/Manager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1752">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E035DE86-AA93-426B-B8FA-E8838FF7B915"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/Manager/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "buildRequest(path:limit:offset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E035DE86-AA93-426B-B8FA-E8838FF7B915 - bb7a9ebb8c1e8d11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GOGYM.APIManager.buildRequest(path: GOGYM.URLPath, limit: Swift.Optional&lt;Swift.Int&gt;, offset: Swift.Optional&lt;Swift.Int&gt;) -&gt; Foundation.URLRequest"
+                  moduleName = "GOGYM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azizbessrour/Projects/GOGym/GOGYM/Manager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "544">
+               </Location>
+               <Location
+                  uuid = "E035DE86-AA93-426B-B8FA-E8838FF7B915 - bb7a9ebb8c1e8d11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GOGYM.APIManager.buildRequest(path: GOGYM.URLPath, limit: Swift.Optional&lt;Swift.Int&gt;, offset: Swift.Optional&lt;Swift.Int&gt;) -&gt; Foundation.URLRequest"
+                  moduleName = "GOGYM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/azizbessrour/Projects/GOGym/GOGYM/Manager/APIManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33063DAC-4457-443B-999F-E03E6AC5265A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/View/MainView/ExerciceListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14F7DF78-535D-4A39-9BBC-541A1527FACA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/ViewModel/ExerciceListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchExerciceByBodyPart()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5535E257-AD36-4D94-98E5-A87A2856C7F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GOGYM/ViewModel/ExerciceListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchExerciceByBodyPart()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

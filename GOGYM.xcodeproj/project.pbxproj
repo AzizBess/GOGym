@@ -14,6 +14,7 @@
 		8B6BD7052AE186D800D8D28E /* ExerciceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD7042AE186D800D8D28E /* ExerciceItemView.swift */; };
 		8B6BD7072AE18B5900D8D28E /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD7062AE18B5900D8D28E /* BannerView.swift */; };
 		8B6D8B7B2AD4943500F22BAE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D8B7A2AD4943400F22BAE /* HomeView.swift */; };
+		8B9444852AE49AC900B06FDC /* LoadMoreExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9444842AE49AC900B06FDC /* LoadMoreExampleView.swift */; };
 		AA52F4292AC8CB4000CE7961 /* GOGYMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */; };
 		AA52F42D2AC8CB4200CE7961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */; };
 		AA52F4302AC8CB4200CE7961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42F2AC8CB4200CE7961 /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		8B6BD7042AE186D800D8D28E /* ExerciceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceItemView.swift; sourceTree = "<group>"; };
 		8B6BD7062AE18B5900D8D28E /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		8B6D8B7A2AD4943400F22BAE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8B9444842AE49AC900B06FDC /* LoadMoreExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreExampleView.swift; sourceTree = "<group>"; };
 		AA52F4252AC8CB4000CE7961 /* GOGYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOGYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGYMApp.swift; sourceTree = "<group>"; };
 		AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				AA52F43B2AC8CC5500CE7961 /* ExerciceListView.swift */,
 				8B6D8B7A2AD4943400F22BAE /* HomeView.swift */,
+				8B9444842AE49AC900B06FDC /* LoadMoreExampleView.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AA52F44C2AC8CC5500CE7961 /* Equipement.swift in Sources */,
 				8B6BD7072AE18B5900D8D28E /* BannerView.swift in Sources */,
 				AA52F4482AC8CC5500CE7961 /* ExerciceCardView.swift in Sources */,
+				8B9444852AE49AC900B06FDC /* LoadMoreExampleView.swift in Sources */,
 				AA52F44F2AC8CC5500CE7961 /* BodyPart.swift in Sources */,
 				AA52F4462AC8CC5500CE7961 /* ExerciceService.swift in Sources */,
 			);

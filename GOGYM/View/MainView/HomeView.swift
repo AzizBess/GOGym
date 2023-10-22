@@ -12,9 +12,9 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                ForEach(BodyPart.allCases, id: \.hashValue) {
-                    CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: $0))
-                }
+//                ForEach(BodyPart.allCases, id: \.hashValue) {
+                CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: .chest))
+//                }
             }
             .navigationTitle("Go Gym")
         }

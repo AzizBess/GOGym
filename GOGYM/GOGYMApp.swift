@@ -11,7 +11,8 @@ import SwiftUI
 struct GOGYMApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+//            HomeView()
+            ExerciceListView(viewModel: ExerciceListViewModel(exercices: [], bodyPart: .chest))
         }
     }
 }

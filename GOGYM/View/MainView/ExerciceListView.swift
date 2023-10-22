@@ -11,17 +11,31 @@ struct ExerciceListView: View {
     @ObservedObject var viewModel: ExerciceListViewModel
     var body: some View {
         ScrollView(.vertical) {
-            BannerView(bodyPart: viewModel.bodyPart)
-                .padding(.bottom, 10)
+//            BannerView(bodyPart: viewModel.bodyPart)
+//                .padding(.bottom, 10)
             ForEach(viewModel.exercices, id: \.id, content: { exercice in
                 ExerciceItemView(
-                    imageURL: exercice.gifURL, 
+                    imageURL: exercice.gifURL,
                     title: exercice.name,
                     subtitle: exercice.equipment ?? ""
                 )
+                .frame(maxWidth: .infinity, alignment: .leading)
+                if viewModel.isLoading {
+                    ProgressView()
+                    progressViewStyle(.circular)
+                } else {
+                    Color.clear
+                        .onAppear {
+                            viewModel.loadMore()
+                        }
+                }
             })
-            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 16)
+        }
+        .onAppear {
+            if viewModel.exercices.isEmpty {
+                viewModel.fetchExerciceByBodyPart()
+            }
         }
         .navigationBarTitleDisplayMode(.inline)
     }

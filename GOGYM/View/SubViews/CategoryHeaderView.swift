@@ -37,13 +37,19 @@ struct CategoryHeaderView: View {
                     .frame(maxWidth: .infinity, alignment: .leadingFirstTextBaseline)
                 if hasMore {
                     HStack {
-                        NavigationLink(destination: ExerciceListView(viewModel: ExerciceListViewModel(exercices: viewModel.exercices, bodyPart: viewModel.bodyPart))) {
+                        NavigationLink(
+                            destination: ExerciceListView(
+                                viewModel: ExerciceListViewModel(
+                                    exercices: viewModel.exercices,
+                                    bodyPart: viewModel.bodyPart
+                                )
+                            )
+                        ) {
                             Text("See all")
                                 .font(.caption)
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                                 .padding(.trailing, 10)
                         }
-                        
                     }
                 }
             }
