@@ -11,7 +11,7 @@ import Combine
 class CategoryItemViewModel: ObservableObject {
     @Published var exercices = Exercices()
     @Published var hasMore: Bool = false
-    private let limit = 20
+    private let limit = 10
     let bodyPart: BodyPart
     private var bag = Set<AnyCancellable>()
 

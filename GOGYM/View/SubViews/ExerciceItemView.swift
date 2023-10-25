@@ -24,7 +24,7 @@ struct ExerciceItemView: View {
             .padding(.bottom, 15)
             .overlay(
                 RoundedRectangle(cornerRadius: 15.0)
-                    .stroke(Color.random(), lineWidth: 0.5)
+                    .stroke(Color.gray, lineWidth: 0.5)
             )
             VStack(alignment: .leading) {
                 Text(title)

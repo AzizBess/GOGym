@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    var viewModel: HomeViewModel
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-//                ForEach(BodyPart.allCases, id: \.hashValue) {
-                CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: .chest))
-//                }
+                if viewModel.loadFirstOnly ?? false {
+                    CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: .chest))
+                } else {
+                    ForEach(BodyPart.allCases, id: \.hashValue) {
+                        CategoryItemView(viewModel: CategoryItemViewModel(bodyPart: $0))
+                    }
+                }
             }
             .navigationTitle("Go Gym")
         }
@@ -22,5 +26,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(viewModel: HomeViewModel())
 }

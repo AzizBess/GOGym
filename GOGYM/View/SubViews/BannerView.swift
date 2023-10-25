@@ -12,8 +12,8 @@ struct BannerView: View {
     var body: some View {
         Image(bodyPart.bannerName)
             .resizable()
-            .frame(maxWidth: .infinity, minHeight: 300, maxHeight: 300, alignment: .top)
-            .aspectRatio(contentMode: .fit)
+            .frame(maxWidth: .infinity, minHeight: 250, maxHeight: 250, alignment: .top)
+            .scaledToFit()
             .clipShape(RoundedRectangle(cornerRadius: 15.0))
             .overlay {
                 Text(bodyPart.name + " Exercices")
