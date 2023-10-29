@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Igor Ferreira on 05/04/2022.
-//
+////  Source Code: https://github.com/igorcferreira/GIFImage
 
 import Foundation
 

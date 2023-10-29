@@ -3,7 +3,7 @@
 //  
 //
 //  Created by Igor Ferreira on 9/9/22.
-//
+////  Source Code: https://github.com/igorcferreira/GIFImage
 
 import Foundation
 import SwiftUI

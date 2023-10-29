@@ -12,9 +12,24 @@
 		8B5974962ADACBF300EB2E50 /* CategoryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5974952ADACBF300EB2E50 /* CategoryItemViewModel.swift */; };
 		8B5974982ADADAC000EB2E50 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5974972ADADAC000EB2E50 /* CategoryHeaderView.swift */; };
 		8B6BD7052AE186D800D8D28E /* ExerciceItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD7042AE186D800D8D28E /* ExerciceItemView.swift */; };
-		8B6BD7072AE18B5900D8D28E /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD7062AE18B5900D8D28E /* BannerView.swift */; };
+		8B6BD7072AE18B5900D8D28E /* BodyPartBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BD7062AE18B5900D8D28E /* BodyPartBannerView.swift */; };
 		8B6D8B7B2AD4943500F22BAE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6D8B7A2AD4943400F22BAE /* HomeView.swift */; };
 		8BD8A4DC2AE9DD4F0053BA52 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD8A4DB2AE9DD4F0053BA52 /* HomeViewModel.swift */; };
+		8BDEFA8B2AEAC78A001C8A68 /* CFString+GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA7B2AEAC78A001C8A68 /* CFString+GIFImage.swift */; };
+		8BDEFA8C2AEAC78A001C8A68 /* Data+GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA7C2AEAC78A001C8A68 /* Data+GIFImage.swift */; };
+		8BDEFA8D2AEAC78A001C8A68 /* CGImageSource+GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA7D2AEAC78A001C8A68 /* CGImageSource+GIFImage.swift */; };
+		8BDEFA8E2AEAC78A001C8A68 /* Environment+GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA7E2AEAC78A001C8A68 /* Environment+GIFImage.swift */; };
+		8BDEFA8F2AEAC78A001C8A68 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA7F2AEAC78A001C8A68 /* GIFImage.swift */; };
+		8BDEFA902AEAC78A001C8A68 /* ImageFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA812AEAC78A001C8A68 /* ImageFrame.swift */; };
+		8BDEFA912AEAC78A001C8A68 /* GIFSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA822AEAC78A001C8A68 /* GIFSource.swift */; };
+		8BDEFA922AEAC78A001C8A68 /* FrameRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA832AEAC78A001C8A68 /* FrameRate.swift */; };
+		8BDEFA932AEAC78A001C8A68 /* RawImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA842AEAC78A001C8A68 /* RawImage.swift */; };
+		8BDEFA942AEAC78A001C8A68 /* GIFImage+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA852AEAC78A001C8A68 /* GIFImage+Init.swift */; };
+		8BDEFA952AEAC78A001C8A68 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA872AEAC78A001C8A68 /* ImageLoader.swift */; };
+		8BDEFA962AEAC78A001C8A68 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA882AEAC78A001C8A68 /* PresentationController.swift */; };
+		8BDEFA972AEAC78A001C8A68 /* CGImageSourceIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA892AEAC78A001C8A68 /* CGImageSourceIterator.swift */; };
+		8BDEFA982AEAC78A001C8A68 /* CGImageSourceFrameSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA8A2AEAC78A001C8A68 /* CGImageSourceFrameSequence.swift */; };
+		8BDEFA9A2AEAC9B8001C8A68 /* ExerciceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDEFA992AEAC9B8001C8A68 /* ExerciceDetailView.swift */; };
 		AA52F4292AC8CB4000CE7961 /* GOGYMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */; };
 		AA52F42D2AC8CB4200CE7961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */; };
 		AA52F4302AC8CB4200CE7961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA52F42F2AC8CB4200CE7961 /* Preview Assets.xcassets */; };
@@ -36,9 +51,24 @@
 		8B5974952ADACBF300EB2E50 /* CategoryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemViewModel.swift; sourceTree = "<group>"; };
 		8B5974972ADADAC000EB2E50 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		8B6BD7042AE186D800D8D28E /* ExerciceItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceItemView.swift; sourceTree = "<group>"; };
-		8B6BD7062AE18B5900D8D28E /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		8B6BD7062AE18B5900D8D28E /* BodyPartBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPartBannerView.swift; sourceTree = "<group>"; };
 		8B6D8B7A2AD4943400F22BAE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8BD8A4DB2AE9DD4F0053BA52 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8BDEFA7B2AEAC78A001C8A68 /* CFString+GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CFString+GIFImage.swift"; sourceTree = "<group>"; };
+		8BDEFA7C2AEAC78A001C8A68 /* Data+GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+GIFImage.swift"; sourceTree = "<group>"; };
+		8BDEFA7D2AEAC78A001C8A68 /* CGImageSource+GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImageSource+GIFImage.swift"; sourceTree = "<group>"; };
+		8BDEFA7E2AEAC78A001C8A68 /* Environment+GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment+GIFImage.swift"; sourceTree = "<group>"; };
+		8BDEFA7F2AEAC78A001C8A68 /* GIFImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
+		8BDEFA812AEAC78A001C8A68 /* ImageFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrame.swift; sourceTree = "<group>"; };
+		8BDEFA822AEAC78A001C8A68 /* GIFSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFSource.swift; sourceTree = "<group>"; };
+		8BDEFA832AEAC78A001C8A68 /* FrameRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameRate.swift; sourceTree = "<group>"; };
+		8BDEFA842AEAC78A001C8A68 /* RawImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawImage.swift; sourceTree = "<group>"; };
+		8BDEFA852AEAC78A001C8A68 /* GIFImage+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GIFImage+Init.swift"; sourceTree = "<group>"; };
+		8BDEFA872AEAC78A001C8A68 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		8BDEFA882AEAC78A001C8A68 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		8BDEFA892AEAC78A001C8A68 /* CGImageSourceIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageSourceIterator.swift; sourceTree = "<group>"; };
+		8BDEFA8A2AEAC78A001C8A68 /* CGImageSourceFrameSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageSourceFrameSequence.swift; sourceTree = "<group>"; };
+		8BDEFA992AEAC9B8001C8A68 /* ExerciceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceDetailView.swift; sourceTree = "<group>"; };
 		AA52F4252AC8CB4000CE7961 /* GOGYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GOGYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA52F4282AC8CB4000CE7961 /* GOGYMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOGYMApp.swift; sourceTree = "<group>"; };
 		AA52F42C2AC8CB4200CE7961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +99,7 @@
 		8B5974992ADADAE500EB2E50 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
+				8BDEFA992AEAC9B8001C8A68 /* ExerciceDetailView.swift */,
 				AA52F43B2AC8CC5500CE7961 /* ExerciceListView.swift */,
 				8B6D8B7A2AD4943400F22BAE /* HomeView.swift */,
 			);
@@ -82,9 +113,62 @@
 				AA52F43A2AC8CC5500CE7961 /* ExerciceCardView.swift */,
 				8B6BD7042AE186D800D8D28E /* ExerciceItemView.swift */,
 				8B026A982AD8207900B01E2E /* CategoryItemView.swift */,
-				8B6BD7062AE18B5900D8D28E /* BannerView.swift */,
+				8B6BD7062AE18B5900D8D28E /* BodyPartBannerView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8BDEFA732AEAC5DA001C8A68 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8BDEFA742AEAC658001C8A68 /* Gif */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8BDEFA742AEAC658001C8A68 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				8BDEFA7A2AEAC78A001C8A68 /* extension */,
+				8BDEFA802AEAC78A001C8A68 /* model */,
+				8BDEFA862AEAC78A001C8A68 /* domain */,
+				8BDEFA852AEAC78A001C8A68 /* GIFImage+Init.swift */,
+				8BDEFA7F2AEAC78A001C8A68 /* GIFImage.swift */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		8BDEFA7A2AEAC78A001C8A68 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BDEFA7B2AEAC78A001C8A68 /* CFString+GIFImage.swift */,
+				8BDEFA7C2AEAC78A001C8A68 /* Data+GIFImage.swift */,
+				8BDEFA7D2AEAC78A001C8A68 /* CGImageSource+GIFImage.swift */,
+				8BDEFA7E2AEAC78A001C8A68 /* Environment+GIFImage.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		8BDEFA802AEAC78A001C8A68 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8BDEFA812AEAC78A001C8A68 /* ImageFrame.swift */,
+				8BDEFA822AEAC78A001C8A68 /* GIFSource.swift */,
+				8BDEFA832AEAC78A001C8A68 /* FrameRate.swift */,
+				8BDEFA842AEAC78A001C8A68 /* RawImage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8BDEFA862AEAC78A001C8A68 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				8BDEFA872AEAC78A001C8A68 /* ImageLoader.swift */,
+				8BDEFA882AEAC78A001C8A68 /* PresentationController.swift */,
+				8BDEFA892AEAC78A001C8A68 /* CGImageSourceIterator.swift */,
+				8BDEFA8A2AEAC78A001C8A68 /* CGImageSourceFrameSequence.swift */,
+			);
+			path = domain;
 			sourceTree = "<group>";
 		};
 		AA52F41C2AC8CB4000CE7961 = {
@@ -106,6 +190,7 @@
 		AA52F4272AC8CB4000CE7961 /* GOGYM */ = {
 			isa = PBXGroup;
 			children = (
+				8BDEFA732AEAC5DA001C8A68 /* Tools */,
 				8B1767D82AE17965003284D3 /* Credentials.swift */,
 				AA52F4512AC8CCAA00CE7961 /* Manager */,
 				AA52F43F2AC8CC5500CE7961 /* Enum */,
@@ -256,20 +341,35 @@
 				AA52F4472AC8CC5500CE7961 /* APIManager.swift in Sources */,
 				8B5974982ADADAC000EB2E50 /* CategoryHeaderView.swift in Sources */,
 				8B6D8B7B2AD4943500F22BAE /* HomeView.swift in Sources */,
+				8BDEFA922AEAC78A001C8A68 /* FrameRate.swift in Sources */,
+				8BDEFA8E2AEAC78A001C8A68 /* Environment+GIFImage.swift in Sources */,
+				8BDEFA952AEAC78A001C8A68 /* ImageLoader.swift in Sources */,
 				AA52F44B2AC8CC5500CE7961 /* ExerciceListViewModel.swift in Sources */,
 				8B5974962ADACBF300EB2E50 /* CategoryItemViewModel.swift in Sources */,
 				AA52F44D2AC8CC5500CE7961 /* Target.swift in Sources */,
 				8B6BD7052AE186D800D8D28E /* ExerciceItemView.swift in Sources */,
+				8BDEFA932AEAC78A001C8A68 /* RawImage.swift in Sources */,
 				AA52F4292AC8CB4000CE7961 /* GOGYMApp.swift in Sources */,
 				AA52F4502AC8CC5500CE7961 /* Exercice.swift in Sources */,
+				8BDEFA982AEAC78A001C8A68 /* CGImageSourceFrameSequence.swift in Sources */,
+				8BDEFA962AEAC78A001C8A68 /* PresentationController.swift in Sources */,
+				8BDEFA8F2AEAC78A001C8A68 /* GIFImage.swift in Sources */,
 				AA52F44E2AC8CC5500CE7961 /* URLPath.swift in Sources */,
+				8BDEFA942AEAC78A001C8A68 /* GIFImage+Init.swift in Sources */,
+				8BDEFA902AEAC78A001C8A68 /* ImageFrame.swift in Sources */,
 				AA52F4492AC8CC5500CE7961 /* ExerciceListView.swift in Sources */,
+				8BDEFA8C2AEAC78A001C8A68 /* Data+GIFImage.swift in Sources */,
 				8B1767D92AE17965003284D3 /* Credentials.swift in Sources */,
+				8BDEFA9A2AEAC9B8001C8A68 /* ExerciceDetailView.swift in Sources */,
+				8BDEFA8B2AEAC78A001C8A68 /* CFString+GIFImage.swift in Sources */,
 				8B026A992AD8207A00B01E2E /* CategoryItemView.swift in Sources */,
+				8BDEFA8D2AEAC78A001C8A68 /* CGImageSource+GIFImage.swift in Sources */,
 				AA52F44C2AC8CC5500CE7961 /* Equipement.swift in Sources */,
-				8B6BD7072AE18B5900D8D28E /* BannerView.swift in Sources */,
+				8B6BD7072AE18B5900D8D28E /* BodyPartBannerView.swift in Sources */,
 				AA52F4482AC8CC5500CE7961 /* ExerciceCardView.swift in Sources */,
+				8BDEFA912AEAC78A001C8A68 /* GIFSource.swift in Sources */,
 				AA52F44F2AC8CC5500CE7961 /* BodyPart.swift in Sources */,
+				8BDEFA972AEAC78A001C8A68 /* CGImageSourceIterator.swift in Sources */,
 				AA52F4462AC8CC5500CE7961 /* ExerciceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

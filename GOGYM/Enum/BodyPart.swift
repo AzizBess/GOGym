@@ -25,7 +25,29 @@ enum BodyPart: String, CaseIterable {
     }
     
     var logoName: String {
-        "bp-" + rawValue
+        switch self {
+            
+        case .chest:
+            return "pectorals"
+        case .back:
+            return "back"
+        case .waist:
+            return "abdominal"
+        case .shoulders:
+            return "shoulder"
+        case .upperArms:
+            return "arm"
+        case .upperLegs:
+            return "quadricep"
+        case .lowerArms:
+            return "forearm"
+        case .lowerLegs:
+            return "calves"
+        case .cardio:
+            return "cardio"
+        case .neck:
+            return "neck"
+        }
     }
     
     var bannerName: String {

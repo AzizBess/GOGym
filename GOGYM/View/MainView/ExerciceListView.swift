@@ -11,7 +11,7 @@ struct ExerciceListView: View {
     @ObservedObject var viewModel: ExerciceListViewModel
     var body: some View {
         List {
-            BannerView(bodyPart: viewModel.bodyPart)
+            BodyPartBannerView(bodyPart: viewModel.bodyPart)
                 .padding(.bottom, 10)
                 .listRowSeparator(.hidden)
             ForEach(viewModel.exercices, id: \.id, content: { exercice in
