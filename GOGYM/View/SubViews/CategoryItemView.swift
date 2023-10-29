@@ -22,11 +22,12 @@ struct CategoryItemView: View {
             ScrollView(.horizontal) {
                 HStack {
                     ForEach(viewModel.exercices, id: \.id) { exercice in
-                        ExerciceCardView(
-                            imageURL: exercice.gifURL,
-                            title: exercice.name,
-                            subtitle: exercice.equipment ?? ""
-                        )
+                        NavigationLink(destination: ExerciceDetailView(viewModel: ExerciceDetailViewModel(exercice: exercice))) {
+                            ExerciceCardView(
+                                imageURL: exercice.gifURL,
+                                title: exercice.name,
+                                subtitle: exercice.equipment ?? ""
+                            )
                             .frame(minHeight: 250, alignment: .center)
                             .containerRelativeFrame(.horizontal,
                                                     count: 2,
@@ -35,6 +36,7 @@ struct CategoryItemView: View {
                                 RoundedRectangle(cornerRadius: 20)
                                     .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
                             )
+                        }
                     }
                 }
                 .scrollTargetLayout()
