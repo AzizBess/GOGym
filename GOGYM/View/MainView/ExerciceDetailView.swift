@@ -13,6 +13,16 @@ class ExerciceDetailViewModel: ObservableObject {
     init(exercice: Exercice) {
         self.exercice = exercice
     }
+    
+    var target: Target {
+        if 
+            exercice.target == .abs &&
+            exercice.secondaryMuscles.contains("obliques") {
+            return .oblique
+        } else {
+            return exercice.target
+        }
+    }
 }
 
 struct ExerciceDetailView: View {
@@ -33,13 +43,14 @@ struct ExerciceDetailView: View {
                 )
                 .padding(.horizontal, 4)
             Text(viewModel.exercice.name.capitalized)
-                .font(.title)
+                .font(.title2)
                 .bold()
                 .fontDesign(.rounded)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
             VStack(spacing: 0) {
-                horizontalView(image: viewModel.exercice.target, title: "Target:", value: viewModel.exercice.target.capitalized)
+                
+                horizontalView(image: viewModel.target.logoName, title: "Target:", value: viewModel.target.rawValue.capitalized)
                 
                 horizontalView(image: "equipment", title: "Equipment:", value: (viewModel.exercice.equipment ?? "").capitalized)
                 
@@ -48,7 +59,7 @@ struct ExerciceDetailView: View {
             .background(Color(red: 250, green: 250, blue: 250))
             
             Text("Instructions")
-                .font(.title)
+                .font(.title3)
                 .bold()
                 .fontDesign(.rounded)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -114,7 +125,7 @@ struct ExerciceDetailView: View {
         gifURL: "https://v2.exercisedb.io/image/MsraK1iC2zNG4l",
         id: "3294",
         name: "archer push up",
-        target: "pectorals",
+        target: .pectorals,
         secondaryMuscles: ["triceps", "shoulders", "core"],
         instructions: [
             "Start in a push-up position with your hands slightly wider than shoulder-width apart.",

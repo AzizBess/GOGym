@@ -8,7 +8,6 @@
 import Foundation
 
 enum BodyPart: String, CaseIterable {
-    
     case chest
     case back
     case waist
@@ -40,7 +39,7 @@ enum BodyPart: String, CaseIterable {
         case .upperLegs:
             return "quadricep"
         case .lowerArms:
-            return "forearm"
+            return "forearms"
         case .lowerLegs:
             return "calves"
         case .cardio:
@@ -63,7 +62,7 @@ enum BodyPart: String, CaseIterable {
         case.upperArms:
             return "arms".capitalized
         case .upperLegs:
-            return "legs".capitalized
+            return "quadricep".capitalized
         case .waist:
             return "abs".capitalized
         default:

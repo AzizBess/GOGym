@@ -10,7 +10,8 @@ struct Exercice: Codable {
     var bodyPart: String
     var equipment: String?
     var gifURL: String
-    var id, name, target: String
+    var id, name: String
+    var target: Target
     let secondaryMuscles, instructions: [String]
     
     enum CodingKeys: String, CodingKey {
