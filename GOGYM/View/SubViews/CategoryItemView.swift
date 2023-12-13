@@ -10,6 +10,7 @@ import Combine
 
 struct CategoryItemView: View {
     @ObservedObject var viewModel: CategoryItemViewModel
+    @State private var position: Int?
     var body: some View {
         VStack(spacing: 5.0) {
             CategoryHeaderView(
@@ -38,16 +39,47 @@ struct CategoryItemView: View {
                             )
                         }
                     }
+                    NavigationLink(destination: ExerciceListView(viewModel: ExerciceListViewModel(exercices: viewModel.exercices, bodyPart: viewModel.bodyPart))) {
+                    VStack {
+                        ZStack {
+                            Image("see_all")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 150, height: 150, alignment: .center)
+                            
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 15.0))
+                        
+                        .padding(.bottom, 15)
+                        VStack {
+                            Text("See More")
+                                .font(.subheadline)
+                                .lineLimit(2)
+                                .multilineTextAlignment(.center)
+                                .bold()
+                                .foregroundStyle(Color.black.gradient)
+                        }
+                        .padding(.horizontal, 5)
+                    }
+                    .frame(minHeight: 250, alignment: .center)
+                    .containerRelativeFrame(.horizontal,
+                                            count: 2,
+                                            spacing: 0.0)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 0.5)
+                    )
+                }
                 }
                 .scrollTargetLayout()
             }
+            .scrollPosition(id: $position)
             .contentMargins(8, for: .scrollContent)
             .scrollTargetBehavior(.viewAligned(limitBehavior: .automatic))
         }
         .onAppear(perform: {
             viewModel.fetchExerciceByBodyPart()
         })
-
     }
 }
 

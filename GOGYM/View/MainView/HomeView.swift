@@ -20,6 +20,7 @@ struct HomeView: View {
                     }
                 }
             }
+            .padding(.top, 10)
             .navigationTitle("Go Gym")
         }
     }
