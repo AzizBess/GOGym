@@ -15,13 +15,15 @@ struct ExerciceListView: View {
                 .padding(.bottom, 10)
                 .listRowSeparator(.hidden)
             ForEach(viewModel.exercices, id: \.id, content: { exercice in
-                ExerciceItemView(
-                    imageURL: exercice.gifURL,
-                    title: exercice.name,
-                    subtitle: exercice.equipment ?? ""
-                )
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .listRowSeparator(.hidden)
+                NavigationLink(destination: ExerciceDetailView(viewModel: ExerciceDetailViewModel(exercice: exercice))) {
+                    ExerciceItemView(
+                        imageURL: exercice.gifURL,
+                        title: exercice.name,
+                        subtitle: exercice.equipment ?? ""
+                    )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .listRowSeparator(.hidden)
+                }
             })
             .padding(.horizontal, 16)
             

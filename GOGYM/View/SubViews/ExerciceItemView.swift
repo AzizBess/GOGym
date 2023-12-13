@@ -37,6 +37,7 @@ struct ExerciceItemView: View {
                     .multilineTextAlignment(.leading)
                     .foregroundStyle(Color.black.gradient)
             }
+            .padding(.horizontal, 20)
             .padding(.vertical, 10)
         }
     }

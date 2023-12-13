@@ -18,7 +18,7 @@ class ExerciceDetailViewModel: ObservableObject {
         if 
             exercice.target == .abs &&
             exercice.secondaryMuscles.contains("obliques") {
-            return .oblique
+            return .obliques
         } else {
             return exercice.target
         }

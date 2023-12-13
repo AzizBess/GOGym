@@ -8,5 +8,5 @@
 import SwiftUI
 
 class HomeViewModel {
-    let loadFirstOnly: Bool? = false
+    let loadFirstOnly: Bool? = true
 }
